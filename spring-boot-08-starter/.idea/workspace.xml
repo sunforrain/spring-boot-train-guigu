@@ -12,12 +12,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="35" />
+              <caret line="8" column="35" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -25,13 +25,13 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="300">
               <caret line="12" column="37" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HelloService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
@@ -46,29 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloProperties.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="25" />
-              <folding>
-                <element signature="e#315#316#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HelloServiceAutoConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloServiceAutoConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
+            <state relative-caret-position="350">
               <caret line="18" column="50" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,6 +75,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -150,6 +134,7 @@
     <option name="width" value="1401" />
     <option name="height" value="1002" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -157,7 +142,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,6 +153,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,53 +237,131 @@
       <option name="presentableId" value="Default" />
       <updated>1565770861978</updated>
       <workItem from="1565770866133" duration="4299000" />
+      <workItem from="1566533325311" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4299000" />
+    <option name="totallyTimeSpent" value="4337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" weight="0.31042847" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.31042847" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32920355" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2497979" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25383994" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="35" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="37" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+          <folding>
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloServiceAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.7.RELEASE/spring-boot-autoconfigure-2.1.7.RELEASE.jar!/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -308,7 +371,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloServiceAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="350">
           <caret line="18" column="50" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -325,7 +388,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="300">
           <caret line="12" column="37" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
@@ -333,7 +396,14 @@
     <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="35" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="35" />
+          <caret line="8" column="35" selection-start-line="6" selection-start-column="4" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -346,23 +416,6 @@
             <element signature="e#181#182#0" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#305#306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/atguigu-spring-boot-starter-autoconfigurer/src/main/java/com/atguigu/starter/HelloProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="e#315#316#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
           </folding>
         </state>
       </provider>
