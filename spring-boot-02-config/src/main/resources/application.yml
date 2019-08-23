@@ -1,0 +1,18 @@
+# yml支持多文档块的方式配置
+server:
+  port: 8081
+# 设定激活哪一个块
+# 如果同时存在一个application-prod.properties文件,且相同的配置的话,这里是properties文件优先的
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8083
+spring:
+  profiles: dev
+---
+server:
+  port: 8084
+spring:
+  profiles: prod #指定属于哪个环境

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.2.169/jpa
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+#  由此可见jpa应用了hibernate的一些功能
+    hibernate:
+#      更新或者创建数据表结构,根据实体类
+      ddl-auto: update
+#   显示hibernate操作的语句
+    show-sql: true
