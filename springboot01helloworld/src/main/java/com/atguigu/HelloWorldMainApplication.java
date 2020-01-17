@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 */
 @SpringBootApplication
 public class HelloWorldMainApplication {
-    // IDEA的main方法缩写psvm
+    // IDEA的main方法缩写psvm或者main
     // 直接运行main方法就能启动这个程序,而不再是要配tomcat
     public static void main(String[] args) {
         // spring应用启动起来
