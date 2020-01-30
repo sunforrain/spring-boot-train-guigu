@@ -1,23 +1,17 @@
 package com.atguigu.springboot.config;
 
-import com.atguigu.springboot.component.LoginHandlerInterceptor;
 import com.atguigu.springboot.component.MyLocalResolver;
-import com.sun.corba.se.spi.resolver.LocalResolver;
-import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
-import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-//使用WebMvcConfigurerAdapter可以来扩展SpringMVC的功能
+//使用WebMvcConfigurationSupport可以来扩展SpringMVC的功能
 @Configuration
 //@EnableWebMvc  不要接管springMvc
-public class MyMvcConfig extends WebMvcConfigurerAdapter {
+public class MyMvcConfig extends WebMvcConfigurationSupport {
 
     // 添加一个视图映射
     @Override
