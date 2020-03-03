@@ -18,7 +18,7 @@
         <!--配置java版本-->
         <java.version>1.8</java.version>
         <!--配置thymeleaf版本-->
-        <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
+        <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
         <!--布局功能的支持程序 thymeleaf3主程序 layout2以上版本 -->
         <!--thymeleaf2 layout1-->
         <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
@@ -55,6 +55,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
         </dependency>
     </dependencies>
 

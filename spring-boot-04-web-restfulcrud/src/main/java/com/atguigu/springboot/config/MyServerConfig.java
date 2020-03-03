@@ -3,15 +3,14 @@ package com.atguigu.springboot.config;
 import com.atguigu.springboot.filter.MyFilter;
 import com.atguigu.springboot.listener.MyListener;
 import com.atguigu.springboot.servlet.MyServlet;
-import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
+import org.springframework.boot.web.server.ConfigurableWebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.servlet.ServletRegistration;
 import java.util.Arrays;
 
 @Configuration
@@ -46,11 +45,11 @@ public class MyServerConfig {
 
     // 嵌入式的Servlet容器的定制器,可以修改servlet容器的配置
     @Bean //一定要将这个定制器加入到容器中
-    public EmbeddedServletContainerCustomizer embeddedServletContainerCustomizer(){
-        return new EmbeddedServletContainerCustomizer() {
+    public WebServerFactoryCustomizer<ConfigurableWebServerFactory> embeddedServletContainerCustomizer(){
+        return new WebServerFactoryCustomizer<ConfigurableWebServerFactory>() {
             //定制嵌入式的Servlet容器相关的规则
             @Override
-            public void customize(ConfigurableEmbeddedServletContainer container) {
+            public void customize(ConfigurableWebServerFactory container) {
                 container.setPort(8083);
             }
         };

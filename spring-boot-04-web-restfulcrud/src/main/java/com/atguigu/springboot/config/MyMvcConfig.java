@@ -6,12 +6,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 //使用WebMvcConfigurationSupport可以来扩展SpringMVC的功能
 @Configuration
 //@EnableWebMvc  不要接管springMvc
-public class MyMvcConfig extends WebMvcConfigurationSupport {
+public class MyMvcConfig implements WebMvcConfigurer {
 
     // 添加一个视图映射
     @Override
@@ -23,8 +23,8 @@ public class MyMvcConfig extends WebMvcConfigurationSupport {
 
     // 所有的WebMvcConfigurerAdapter都会一起起作用
     @Bean // 将组件注册在容器中
-    public WebMvcConfigurerAdapter webMvcConfigurerAdapter(){
-        WebMvcConfigurerAdapter adapter = new WebMvcConfigurerAdapter() {
+    public WebMvcConfigurationSupport webMvcConfigurerAdapter(){
+        WebMvcConfigurationSupport adapter = new WebMvcConfigurationSupport() {
             // 注册自定义视图解析器
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
@@ -33,6 +33,7 @@ public class MyMvcConfig extends WebMvcConfigurationSupport {
                 // 自定义视图解析器,登陆后重定向到main.html,对应dashboard.html,这样还隐藏了真正的页面路径
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
+
 //            // 注册拦截器 为了测试springboot的错误处理,屏蔽
 //            @Override
 //            public void addInterceptors(InterceptorRegistry registry) {
@@ -44,8 +45,6 @@ public class MyMvcConfig extends WebMvcConfigurationSupport {
 //                        .excludePathPatterns("/index.html","/","/user/login");// 配置不需要拦截的请求,就是登录页面
 //            }
         };
-
-
         return adapter;
     }
     // 配置上自定义的区域信息解析器
