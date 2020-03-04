@@ -22,6 +22,7 @@
 		<img class="mb-4" th:src="@{/asserts/img/bootstrap-solid.svg}" src="asserts/img/bootstrap-solid.svg" alt="" width="72" height="72">
 		<!--视频35 尚硅谷_SpringBoot_web开发-【实验】-国际化, 使用#{login.tip}的形式获取国际化配置-->
 		<h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please sign in</h1>
+		<!--视频36 尚硅谷_SpringBoot_web开发-【实验】-登陆&拦截器 显示登陆失败提示-->
 		<p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
 		<label class="sr-only" th:text="#{login.username}">Username</label>
 		<input type="text" class="form-control" name="username" placeholder="Username" th:placeholder="#{login.username}" required="" autofocus="">

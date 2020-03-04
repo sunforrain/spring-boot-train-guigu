@@ -1,5 +1,6 @@
 package com.atguigu.springboot.config;
 
+import com.atguigu.springboot.component.LoginHandlerInterceptor;
 import com.atguigu.springboot.component.MyLocalResolver;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,8 +27,20 @@ public class MyMvcConfig implements WebMvcConfigurer {
         // 2.1.5中WebMvcConfigurerAdapter已过期,不建议使用下面的方法,直接Override WebMvcConfigurer相关方法就好
         registry.addViewController("/").setViewName("login");
         registry.addViewController("/index.html").setViewName("login");
-        // 自定义视图解析器,登陆后重定向到main.html,对应dashboard.html,这样还隐藏了真正的页面路径
+        // 视频36 尚硅谷_SpringBoot_web开发-【实验】-登陆&拦截器
+        // 定义一个视图映射,参考LoginController,用于登陆后重定向到main.html,对应dashboard.html,这样还隐藏了真正的页面路径
         registry.addViewController("/main.html").setViewName("dashboard");
+    }
+
+    // 视频36 尚硅谷_SpringBoot_web开发-【实验】-登陆&拦截器
+    // 注册拦截器
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        //静态资源； *.css , *.js
+        //SpringBoot已经做好了静态资源映射,所以不用配置静态资源的
+        registry.addInterceptor(new LoginHandlerInterceptor())
+                .addPathPatterns("/**")// 配置需要拦截的请求,/**标示任意层级的任意请求
+                .excludePathPatterns("/index.html","/","/user/login");// 配置不需要拦截的请求,就是登录页面
     }
 
     /**
@@ -54,7 +67,6 @@ public class MyMvcConfig implements WebMvcConfigurer {
 ////            public void addInterceptors(InterceptorRegistry registry) {
 ////                //静态资源； *.css , *.js
 ////                //SpringBoot已经做好了静态资源映射,所以不用配置静态资源的
-////                // 注意2.0需要配置,会被拦截!
 ////                registry.addInterceptor(new LoginHandlerInterceptor())
 ////                        .addPathPatterns("/**")// 配置需要拦截的请求,/**标示任意层级的任意请求
 ////                        .excludePathPatterns("/index.html","/","/user/login");// 配置不需要拦截的请求,就是登录页面
