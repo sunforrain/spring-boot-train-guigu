@@ -11,12 +11,16 @@
     <groupId>com.atguigu</groupId>
     <artifactId>spring-boot-04-web-restfulcrud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <!--视频29 尚硅谷_SpringBoot_web开发-webjars&静态资源映射规则-->
+    <!--设置打包为jar,注意这会影响静态资源映射-->
+    <packaging>jar</packaging>
     <name>spring-boot-04-web-restfulcrud</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <!--配置java版本-->
         <java.version>1.8</java.version>
+        <!--视频30 尚硅谷_SpringBoot_web开发-引入thymeleaf-->
         <!--配置thymeleaf版本-->
         <thymeleaf.version>3.0.11.RELEASE</thymeleaf.version>
         <!--布局功能的支持程序 thymeleaf3主程序 layout2以上版本 -->
@@ -25,13 +29,16 @@
     </properties>
 
     <dependencies>
+        <!--视频29 尚硅谷_SpringBoot_web开发-webjars&静态资源映射规则-->
         <!-- 引入web模块 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--引入jquery-webjar-->
+        <!--视频29 尚硅谷_SpringBoot_web开发-webjars&静态资源映射规则-->
+        <!--引入jquery-webjar
+            在jar形式的项目下可以通过 http://localhost:8080/webjars/jquery/3.4.1/jquery.js 访问静态资源-->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
@@ -45,7 +52,8 @@
             <version>4.3.1</version>
         </dependency>
 
-        <!--引入thymeleaf-->
+        <!--视频30 尚硅谷_SpringBoot_web开发-引入thymeleaf-->
+        <!--引入thymeleaf,默认的版本太低,要在上面指定版本-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
