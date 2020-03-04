@@ -8,18 +8,18 @@
     <h1>成功!</h1>
     <!--视频31 尚硅谷_SpringBoot_web开发-thymeleaf语法-->
     <!--th:text 将div里面的文本内容设置为后端传的数据 -->
-    <div id="div01" class="mydiv" th:text="${hello}">这是显示欢迎的信息</div>
+    <div id="div01" class="mydiv" th:id="${hello}" th:class="${hello}" th:text="${hello}">这是显示欢迎的信息</div>
     <hr/>
-<!--    &lt;!&ndash;转义和不转义的对比&ndash;&gt;-->
-<!--    <div th:text="${hello}"></div>-->
-<!--    <div th:utext="${hello}"></div>-->
-<!--    <hr/>-->
-<!--    &lt;!&ndash;th:each每次遍历都会生成当前这个标签&ndash;&gt;-->
-<!--    <h4 th:text="${user}" th:each="user:${users}"></h4>-->
-<!--    <hr/>-->
-<!--    &lt;!&ndash;遍历加行内显示&ndash;&gt;-->
-<!--    <h4>-->
-<!--        <span th:each="user:${users}">[[${user}]]</span>-->
+    <!--转义和不转义的对比-->
+    <div th:text="${hello}"></div>
+    <div th:utext="${hello}"></div>
+    <hr/>
+    <!--th:each每次遍历都会生成当前这个标签: 3个h4-->
+    <h4 th:text="${user}" th:each="user:${users}"></h4>
+    <hr/>
+    <!--遍历加行内显示[[${user}]]会有转义,[(${user})]不会,3个span-->
+    <h4>
+        <span th:each="user:${users}">[[${user}]]</span>
     </h4>
 </body>
 </html>

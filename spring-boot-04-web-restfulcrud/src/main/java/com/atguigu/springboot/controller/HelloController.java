@@ -43,11 +43,13 @@ public class HelloController {
         return "success";
     }
 
-//    @RequestMapping("/success")
-//    public String success2 (Map<String, Object> map) {
-//        // classpath:/templates/success.html
-//        map.put("hello","<h1>你好</h1>");
-//        map.put("users", Arrays.asList("zhangsan", "lisi", "wangwu"));
-//        return "success";
-//    }
+    // 视频31 尚硅谷_SpringBoot_web开发-thymeleaf语法
+    // 演示转义和不转义的对比和遍历标签
+    @RequestMapping("/success2")
+    public String success2 (Map<String, Object> map) {
+        // classpath:/templates/success.html
+        map.put("hello","<h1>你好</h1>");
+        map.put("users", Arrays.asList("zhangsan", "lisi", "wangwu"));
+        return "success";
+    }
 }
