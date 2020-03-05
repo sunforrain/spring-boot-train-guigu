@@ -15,6 +15,9 @@
 		<!-- 注意静态文件的路径th表达式一定要从 / 开始,否则模板引擎可能找不到文件 -->
 		<!-- 如密码错误转发回来的时候会拼成: http://localhost:8080/crud/user/asserts/css/signin.css -->
 		<link href="asserts/css/signin.css" th:href="@{/asserts/css/signin.css}" rel="stylesheet">
+		<!--favicon.ico还要在这里设置下,如果是thymeleaf的话-->
+		<link rel="shortcut icon" th:href="@{/favicon.ico}"/>
+		<link rel="bookmark" th:href="@{/favicon.ico}"/>
 	</head>
 
 	<body class="text-center">

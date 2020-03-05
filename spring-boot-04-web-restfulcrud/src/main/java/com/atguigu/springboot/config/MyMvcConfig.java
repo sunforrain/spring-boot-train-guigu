@@ -40,8 +40,11 @@ public class MyMvcConfig implements WebMvcConfigurer {
         //SpringBoot已经做好了静态资源映射,所以不用配置静态资源的
         registry.addInterceptor(new LoginHandlerInterceptor())
                 .addPathPatterns("/**")// 配置需要拦截的请求,/**标示任意层级的任意请求
-                .excludePathPatterns("/index.html","/","/user/login");// 配置不需要拦截的请求,就是登录页面
+                .excludePathPatterns("/index.html","/","/user/login",// 配置不需要拦截的请求,就是登录页面
+                 "/favicon.ico","/asserts/**","/webjars/**");// 关于webjars和样式静态文件也要排除,否则会以text/html返回,浏览器会报错
     }
+
+
 
     /**
      *  视频34 尚硅谷_SpringBoot_web开发-【实验】-引入资源
