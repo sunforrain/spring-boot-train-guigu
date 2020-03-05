@@ -1,5 +1,6 @@
 package com.atguigu.springboot.controller;
 
+import com.atguigu.springboot.exception.UserNotExistException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,17 +20,16 @@ public class HelloController {
     @ResponseBody
     @RequestMapping("/hello")
     public String hello () {
-//        if(user.equals("aaa")){
-////            throw new UserNotExistException();
-////        }
         return "hello world";
     }
 
+    // 视频45 尚硅谷_SpringBoot_web开发-定制错误数据
+    // 简单测试向前台弹错的情况,要带参数user=aaa就会弹异常,如果不带参数则会报缺少参数错误 Required String parameter 'user' is not present
     @ResponseBody
     @RequestMapping("/hello2")
     public String hello2 (@RequestParam("user")String user) {
         if(user.equals("aaa")){
-//            throw new UserNotExistException();
+            throw new UserNotExistException();
         }
         return "hello world";
     }

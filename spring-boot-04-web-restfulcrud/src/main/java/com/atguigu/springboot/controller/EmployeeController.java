@@ -84,6 +84,7 @@ public class EmployeeController {
         return "redirect:/emps";
     }
 
+    // 视频43 尚硅谷_SpringBoot_web开发-【实验】-员工删除-删除完成
     // 员工删除
     @DeleteMapping("/emp/{id}")
     public String deleteEmployee(@PathVariable("id") Integer id) {
