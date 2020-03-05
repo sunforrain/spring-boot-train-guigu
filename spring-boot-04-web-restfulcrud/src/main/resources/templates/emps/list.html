@@ -90,8 +90,15 @@
 								<!-- 日期格式的内部对象见thymeleaf文档的附录B Date部分 -->
 								<td th:text="${#dates.format(emp.birth, 'yyyy-MM-dd HH:mm')}"></td>
 								<td>
+									<!--视频42 尚硅谷_SpringBoot_web开发-【实验】-员工修改-重用页面&修改完成-->
 									<!-- 修改需要带上员工的id,下面是遍历的写法 -->
 									<a class="btn btn-sm btn-primary" th:href="@{/emp/}+${emp.id}">编辑</a>
+									<!--视频43 尚硅谷_SpringBoot_web开发-【实验】-员工删除-删除完成-->
+									<!--使用如下的方式标签太重了,每个td里面都有个form,不合理-->
+<!--									<form th:action="@{/emp/}+${emp.id}" method="post">-->
+<!--										<input type="hidden" name="_method" value="delete">-->
+<!--										<button type="submit" class="btn btn-sm btn-danger deleteBtn"></button>-->
+<!--									</form>-->
 									<!-- 使用th:attr自定义属性 -->
 									<button th:attr="del_uri=@{/emp/}+${emp.id}" class="btn btn-sm btn-danger deleteBtn">删除</button>
 								</td>
@@ -100,24 +107,30 @@
 						</table>
 					</div>
 				</main>
+				<!--视频43 尚硅谷_SpringBoot_web开发-【实验】-员工删除-删除完成,把删除用的form放外面,用js控制表单提交的参数-->
+				<!-- 删除请求,delete请求实际上还是由HiddenHttpMethodFilter实现的 -->
+				<form id="deleteEmpForm" method="post">
+					<input type="hidden" name="_method" value="delete">
+				</form>
 			</div>
 		</div>
 
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script type="text/javascript" src="../../static/asserts/js/jquery-3.2.1.slim.min.js"></script>
-		<script type="text/javascript" src="../../static/asserts/js/popper.min.js"></script>
-		<script type="text/javascript" src="../../static/asserts/js/bootstrap.min.js"></script>
+		<!-- 注意更改js的引用路径,jQuery的webjar路径还有些不同 -->
+		<script type="text/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.slim.js}" src="/asserts/js/jquery-3.2.1.slim.min.js"></script>
+		<script type="text/javascript" th:src="@{/asserts/js/popper.min.js}" src="/asserts/js/popper.min.js"></script>
+		<script type="text/javascript" th:src="@{/asserts/js/bootstrap.min.js}" src="/asserts/js/bootstrap.min.js"></script>
 
 		<!-- Icons -->
-		<script type="text/javascript" src="../../static/asserts/js/feather.min.js"></script>
+		<script type="text/javascript" th:src="@{/asserts/js/feather.min.js}" src="/asserts/js/feather.min.js"></script>
 		<script>
 			feather.replace()
 		</script>
 
 		<!-- Graphs -->
-		<script type="text/javascript" src="../../static/asserts/js/Chart.min.js"></script>
+		<script type="text/javascript" th:src="@{/asserts/js/Chart.min.js}" src="/asserts/js/Chart.min.js"></script>
 		<script>
 			var ctx = document.getElementById("myChart");
 			var myChart = new Chart(ctx, {
@@ -147,7 +160,14 @@
 				}
 			});
 		</script>
-
+		<!--视频43 尚硅谷_SpringBoot_web开发-【实验】-员工删除-删除完成-->
+		<script>
+			$(".deleteBtn").click(function () {
+				// 获得按钮的del_uri属性,并更改表单提交的地址
+				$("#deleteEmpForm").attr("action",$(this).attr("del_uri")).submit();
+				return false;// 取消掉按钮的默认行为
+			});
+		</script>
 	</body>
 
 </html>
