@@ -8,10 +8,11 @@ import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.*;
 
 // 视频33 尚硅谷_SpringBoot_web开发-扩展与全面接管SpringMVC
-//使用WebMvcConfigurer,不放开@EnableWebMvc可以来扩展SpringMVC的功能
+// 实现WebMvcConfigurer,不放开@EnableWebMvc可以来扩展SpringMVC的功能
+// 可以用继承WebMvcConfigurationSupport替换,但是会导致springMVC的默认配置失效,
+// 因为WebMvcConfigurationSupport是@ConditionalOnMissingBean(WebMvcConfigurationSupport.class)的判断条件
 // 放开@EnableWebMvc则全面接管,springMVC的自动配置全部失效
 @Configuration
-
 //@EnableWebMvc  //不要接管springMvc
 public class MyMvcConfig implements WebMvcConfigurer {
 
@@ -44,7 +45,12 @@ public class MyMvcConfig implements WebMvcConfigurer {
                  "/favicon.ico","/asserts/**","/webjars/**");// 关于webjars和样式静态文件也要排除,否则会以text/html返回,浏览器会报错
     }
 
-
+    // 视频35 尚硅谷_SpringBoot_web开发-【实验】-国际化
+    // 配置上自定义的区域信息解析器,效果是链接的参数上有参数就用自定义的,没参数就用springBoot默认的
+    @Bean
+    public LocaleResolver localeResolver(){
+        return new MyLocalResolver();
+    }
 
     /**
      *  视频34 尚硅谷_SpringBoot_web开发-【实验】-引入资源
@@ -78,10 +84,4 @@ public class MyMvcConfig implements WebMvcConfigurer {
 //        return adapter;
 //    }
 
-    // 视频35 尚硅谷_SpringBoot_web开发-【实验】-国际化
-    // 配置上自定义的区域信息解析器,效果是链接的参数上有参数就用自定义的,没参数就用springBoot默认的
-    @Bean
-    public LocaleResolver localeResolver(){
-        return new MyLocalResolver();
-    }
 }

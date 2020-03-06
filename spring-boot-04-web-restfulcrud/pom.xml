@@ -36,6 +36,21 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--视频48 尚硅谷_SpringBoot_web开发-切换其他嵌入式Servlet容器,一般我们还是用tomcat的-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--                    <groupId>org.springframework.boot</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-jetty</artifactId>-->
+<!--        </dependency>-->
         <!--视频29 尚硅谷_SpringBoot_web开发-webjars&静态资源映射规则-->
         <!--引入jquery-webjar
             在jar形式的项目下可以通过 http://localhost:8080/webjars/jquery/3.4.1/jquery.js 访问静态资源-->

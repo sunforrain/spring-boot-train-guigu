@@ -37,7 +37,7 @@ import java.util.Locale;
  *                       #resolveViewName(java.lang.String, java.util.Locale)点进去看
  *                          org.springframework.web.servlet.view.ContentNegotiatingViewResolver
  *                          #getCandidateViews(java.lang.String, java.util.Locale, java.util.List)
- *                              挨个获取视图解析器并挑选for (ViewResolver viewResolver : this.viewResolvers)
+ *                              挨个获取视图解析器并挑选 for (ViewResolver viewResolver : this.viewResolvers)
  *
  *                          获取到最佳视图并返回
  *                           View bestView = getBestView(candidateViews, requestedMediaTypes, attrs);

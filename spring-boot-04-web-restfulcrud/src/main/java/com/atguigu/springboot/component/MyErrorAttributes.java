@@ -11,9 +11,9 @@ import java.util.Map;
 // 给容器中加入我们自定义的ErrorAttributes
 @Component
 public class MyErrorAttributes extends DefaultErrorAttributes {
-//    // 重写父类的方法,获取到要传出去的ErrorAttributes
-//    // 返回值的map就是页面和json能获取的所有字段
-//    // RequestAttributes就是封装了request对象的
+    // 重写父类的方法,获取到要传出去的ErrorAttributes
+    // 返回值的map就是页面和json能获取的所有字段
+    // RequestAttributes就是封装了request对象的
     @Override
     public Map<String, Object> getErrorAttributes(WebRequest webRequest, boolean includeStackTrace) {
         // 调用父类的方法可以获取到默认的错误信息
@@ -25,4 +25,5 @@ public class MyErrorAttributes extends DefaultErrorAttributes {
         map.put("ext",ext);
         return map;
     }
+    // 最终的效果：响应是自适应的，可以通过定制ErrorAttributes改变需要返回的内容
 }
