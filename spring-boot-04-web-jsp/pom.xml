@@ -11,6 +11,7 @@
     <groupId>com.atguigu</groupId>
     <artifactId>spring-boot-04-web-jsp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <!--视频51 尚硅谷_SpringBoot_web开发-使用外部Servlet容器&JSP支持, 必须创建一个war项目；-->
     <packaging>war</packaging>
     <name>spring-boot-04-web-jsp</name>
     <description>Demo project for Spring Boot</description>
@@ -25,6 +26,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--视频51 尚硅谷_SpringBoot_web开发-使用外部Servlet容器&JSP支持, 将嵌入式的Tomcat指定为provided；-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
