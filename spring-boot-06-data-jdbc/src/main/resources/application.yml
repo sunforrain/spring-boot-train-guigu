@@ -1,13 +1,17 @@
 spring:
   datasource:
     username: root
-    password: 123456
-    url: jdbc:mysql://192.168.1.7:3306/jdbc
-    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://192.168.13.128:3306/atguiguDB
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    视频61 尚硅谷_SpringBoot_数据访问-JDBC&自动配置原理,测试连接下数据源,指定自动运行语句的路径
+#    schema:
+#      - classpath:department.sql
+#    视频62 尚硅谷_SpringBoot_数据访问-整合Druid&配置数据源监控
 #    指定druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
-#   下面这些配置在默认的配置类DataSourceProperties中没有,需要单独写一个配置类
 #   数据源其他配置
+#   下面这些配置在默认的配置类DataSourceProperties中没有,默认不起作用,需要单独写一个配置类
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -24,5 +28,3 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-#    schema:
-#      - classpath:department.sql

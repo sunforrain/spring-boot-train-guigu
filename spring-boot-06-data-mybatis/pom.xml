@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.21.RELEASE</version>
+        <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.atguigu</groupId>
@@ -27,11 +27,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--视频63 尚硅谷_SpringBoot_数据访问-整合MyBatis（一）-基础环境搭建-->
+        <!-- mybatis相关的starter是mybatis自己写的,因而需要手动指定版本以匹配springBoot的版本 -->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.0</version>
+            <version>2.0.1</version>
         </dependency>
+
 
         <!--引入druid数据源-->
         <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
