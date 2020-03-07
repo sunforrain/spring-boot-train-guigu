@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
+// 视频63 尚硅谷_SpringBoot_数据访问-整合MyBatis（一）-基础环境搭建
 // 自定义的druid数据源配置类
 // 以便能够绑定druid的配置属性
 @Configuration

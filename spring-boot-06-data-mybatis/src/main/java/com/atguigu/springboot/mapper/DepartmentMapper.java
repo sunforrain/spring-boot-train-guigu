@@ -3,8 +3,9 @@ package com.atguigu.springboot.mapper;
 import com.atguigu.springboot.bean.Department;
 import org.apache.ibatis.annotations.*;
 
+// 视频64 尚硅谷_SpringBoot_数据访问-整合MyBatis（二）-注解版MyBatis
 // 指定这是一个操作数据库的mapper
-// 这里演示的是mybatis的注解版使用方法
+// mybatis的配置类设置@MapperScan后就不需要@Mapper指定了
 //@Mapper
 public interface DepartmentMapper {
     // 可以看到以前配置文件里面写的sql语句都可以用注解写了
@@ -16,9 +17,9 @@ public interface DepartmentMapper {
 
     // 配置应用自增的主键,这样返回给页面的json数据中才能有主键
     @Options(useGeneratedKeys = true, keyProperty = "id")
-    @Insert("insert into department(department_name)  values (#{departmentName})")
+    @Insert("insert into department(departmentName)  values (#{departmentName})")
     public int insertDept (Department department);
 
-    @Update("update department set department_name=#{departmentName} where id=#{id}")
+    @Update("update department set departmentName=#{departmentName} where id=#{id}")
     public int updateDept (Department department);
 }

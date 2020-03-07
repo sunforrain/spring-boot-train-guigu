@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+// 视频64 尚硅谷_SpringBoot_数据访问-整合MyBatis（二）-注解版MyBatis
 // 这里使用rest风格的控制器,使用普通的控制器页面因为返回同样的路径会报错
 @RestController
 public class DeptController {
