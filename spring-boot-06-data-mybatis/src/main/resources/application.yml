@@ -26,7 +26,7 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-
+#视频65 尚硅谷_SpringBoot_数据访问-整合MyBatis（二）-配置版MyBatis,这也是注解版和配置版的核心区别,另外两种方式可以共用
 mybatis:
 # 配置mybatis 的全局配置文件
   config-location: classpath:mybatis/mybatis-config.xml

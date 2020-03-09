@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.7.RELEASE</version>
+        <version>2.1.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.atguigu.starter</groupId>
@@ -19,7 +19,9 @@
     </properties>
 
     <dependencies>
+        <!--视频71 SpringBoot_原理-自定义starter-->
         <!--引入spring-boot-starter:所有starter的基本配置-->
+        <!--编完了别忘了点maven => 项目 => lifecycle => install 将包装到maven仓库中,这样别人就可以用坐标引入-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

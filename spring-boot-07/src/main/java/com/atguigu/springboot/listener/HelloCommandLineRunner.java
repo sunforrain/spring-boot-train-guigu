@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
+// 视频70 SpringBoot_原理-事件监听机制相关测试
 @Component
 public class HelloCommandLineRunner implements CommandLineRunner {
     @Override

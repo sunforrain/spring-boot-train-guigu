@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplicationRunListener;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 
+// 视频70 SpringBoot_原理-事件监听机制相关测试
 public class HelloSpringApplicationRunListener implements SpringApplicationRunListener {
     // 参考EventPublishingRunListener,要有一个有参构造器,否则项目会报错
     public HelloSpringApplicationRunListener (SpringApplication application, String[] args){

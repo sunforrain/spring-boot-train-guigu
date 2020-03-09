@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.springboot.mapper.EmployeeMapper">
+    <!--视频65 尚硅谷_SpringBoot_数据访问-整合MyBatis（二）-配置版MyBatis-->
     <!--public Employee getEmpById (Integer id);-->
     <select id="getEmpById" resultType="com.atguigu.springboot.bean.Employee">
       SELECT * FROM employee WHERE ID =#{id}

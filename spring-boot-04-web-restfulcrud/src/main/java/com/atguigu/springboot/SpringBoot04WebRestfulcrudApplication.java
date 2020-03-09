@@ -10,7 +10,7 @@ import java.util.Locale;
 
 /**
  * 视频29 尚硅谷_SpringBoot_web开发-webjars&静态资源映射规则
- *     有关mvc的可配置项可见WebMvcAutoConfiguration.java和WebMvcProperties.java
+ *     有关mvc的可配置项可见 WebMvcAutoConfiguration.java和WebMvcProperties.java
  *     静态资源映射见 addResourceHandlers()方法
  *     首页映射见 welcomePageHandlerMapping()方法
  *     配置喜欢的图标见 FaviconConfiguration()方法

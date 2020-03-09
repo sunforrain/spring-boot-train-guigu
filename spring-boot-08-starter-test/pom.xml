@@ -29,7 +29,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
+        <!--视频71 SpringBoot_原理-自定义starter-->
         <!--引入自定义的starter的坐标-->
         <dependency>
             <groupId>com.atguigu.starter</groupId>

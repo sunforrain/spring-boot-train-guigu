@@ -7,9 +7,12 @@
     <groupId>com.atguigu.starter</groupId>
     <artifactId>atguigu-spring-boot-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--视频71 SpringBoot_原理-自定义starter-->
+    <!--注意需要导入jar,要单独打开这个项目,不要有其他项目作为model一起打开,会导致不能导包-->
+    <!--编完了别忘了点maven => 项目 => lifecycle => install 将包装到maven仓库中,这样别人就可以用坐标引入-->
     <!--启动器-->
     <dependencies>
-        <!--引入自动配置模块-->
+        <!--引入自定义的自动配置模块-->
         <dependency>
             <groupId>com.atguigu.starter</groupId>
             <artifactId>atguigu-spring-boot-starter-autoconfigurer</artifactId>
