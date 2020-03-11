@@ -85,7 +85,8 @@ import java.util.Locale;
  *      org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter
  *      #getMessageCodesResolver()
  *          关注下getMessageCodesResolverFormat() =>
- *              private DefaultMessageCodesResolver.Format messageCodesResolverFormat; 点Format进去,可以看到能定义错误代码的前后缀等
+ *              private DefaultMessageCodesResolver.Format messageCodesResolverFormat;
+ *              点Format进去,可以看到能定义错误代码的前后缀等
  *
  *  八,Automatic use of a ConfigurableWebBindingInitializer bean (see below).
  *      org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration
