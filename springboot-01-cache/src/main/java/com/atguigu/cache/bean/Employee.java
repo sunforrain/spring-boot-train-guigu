@@ -1,7 +1,9 @@
 package com.atguigu.cache.bean;
 
+import java.io.Serializable;
+
 // 视频3 缓存-基本环境搭建
-public class Employee {
+public class Employee implements Serializable {
 	
 	private Integer id;
 	private String lastName;

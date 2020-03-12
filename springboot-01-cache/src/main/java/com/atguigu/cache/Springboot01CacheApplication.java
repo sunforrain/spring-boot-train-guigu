@@ -24,11 +24,14 @@ import org.springframework.cache.annotation.EnableCaching;
  * 				@CachePut   保证方法被调用，又希望结果被缓存。
  * 默认使用的是ConcurrentMapCacheManager==ConcurrentMapCache；将数据保存在	ConcurrentMap<Object, Object>中
  * 开发中使用缓存中间件；redis、memcached、ehcache；
+ *
+ * 视频10 缓存-搭建redis环境&测试
  * 三、整合redis作为缓存
  * Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件。
  * 	1、安装redis：使用docker；
  * 	2、引入redis的starter
  * 	3、配置redis
+ * 	视频11 缓存-RedisTemplate&序列化机制
  * 	4、测试缓存
  * 		原理：CacheManager===Cache 缓存组件来实际给缓存中存取数据
  *		1）、引入redis的starter，容器中保存的是 RedisCacheManager；

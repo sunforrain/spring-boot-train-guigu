@@ -21,22 +21,25 @@ public class EmployeeController {
         return employee;
     }
 
-//    @GetMapping("/emp")
-//    public Employee update(Employee employee){
-//        Employee emp = employeeService.updateEmp(employee);
-//
-//        return emp;
-//    }
-//
-//    @GetMapping("/delemp")
-//    public String deleteEmp(Integer id){
-//        employeeService.deleteEmp(id);
-//        return "success";
-//    }
-//
-//    @GetMapping("/emp/lastname/{lastName}")
-//    public Employee getEmpByLastName(@PathVariable("lastName") String lastName){
-//       return employeeService.getEmpByLastName(lastName);
-//    }
+    // 视频7 缓存-@CachePut
+    @GetMapping("/emp")
+    public Employee update(Employee employee){
+        Employee emp = employeeService.updateEmp(employee);
+
+        return emp;
+    }
+
+    // 视频8 缓存-@CacheEvict
+    @GetMapping("/delemp")
+    public String deleteEmp(Integer id){
+        employeeService.deleteEmp(id);
+        return "success";
+    }
+
+    // 视频9 缓存-@Caching&@CacheConfig
+    @GetMapping("/emp/lastname/{lastName}")
+    public Employee getEmpByLastName(@PathVariable("lastName") String lastName){
+       return employeeService.getEmpByLastName(lastName);
+    }
 
 }
