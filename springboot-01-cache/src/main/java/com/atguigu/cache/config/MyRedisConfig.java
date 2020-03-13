@@ -18,6 +18,7 @@ import java.time.Duration;
 @Configuration
 public class MyRedisConfig {
 
+    // 以下是springBoot 1.xx的配置方式,2版本引入Lettuce后序列化不一定这么用了
     // 视频11 缓存-RedisTemplate&序列化机制
     // 自定义一个Employee的序列化机制,使保存对象时值是个json,而不是序列化值
     @Bean
