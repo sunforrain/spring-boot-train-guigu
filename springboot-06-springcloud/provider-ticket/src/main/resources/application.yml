@@ -1,0 +1,17 @@
+# 视频35 分布式-服务注册
+# 这里利用maven的 Lifecyle => package,指定一个8001的打成jar包,还有一个8002的打成jar包,
+# 在cmd用 java -jar xxxx.jar 运行服务造出两个服务来,jar放在:
+# D:\IdeaProjects\study\jars
+server:
+  port: 8002
+spring:
+  application:
+    name: provider-ticket # 提供者的名字
+
+# 注册服务提供者的信息给eureka
+eureka:
+  instance:
+    prefer-ip-address: true # 注册服务的时候使用服务的ip地址进行注册
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
