@@ -1,0 +1,33 @@
+# 应用本身的端口
+server:
+  port: 8080
+
+# 视频38 监管-监管端点测试
+# actuator监控
+management:
+  server:
+    # 设置监控服务端口
+    port: 8081
+  endpoints:
+    # 设置端点是否可用 默认只有shutdown可用
+    enabled-by-default: true
+    web:
+      # 设置是否暴露端点 默认只有health和info可见
+      exposure:
+        # 包括所有端点
+        include: "*" # 注意需要添加引号
+        # 排除端点
+        exclude: shutdown
+#  视频40 监管-自定义HealthIndicator, 设置显示健康信息细节,always是向所有人显示
+  endpoint:
+    health:
+      show-details: always
+# 视频39 监管-定制端点, 启用info endpoint并禁用所有其他端点
+#    enabled-by-default: false
+#  endpoint:
+#    info:
+#      enabled: true
+# 视频40 监管-自定义HealthIndicator, 配置redis,这里是个错的,会报错,前台也显示error
+spring:
+  redis:
+    host: localhost
